@@ -93,8 +93,8 @@ function uploadToR2(localPath, r2Key) {
 
   try {
     execSync(
-      `wrangler r2 object put "${BUCKET}/${r2Key}" --file="${localPath}" --content-type="${mime}"`,
-      { stdio: 'inherit' }
+      `npx wrangler r2 object put "${BUCKET}/${r2Key}" --file="${localPath}" --content-type="${mime}"`,
+      { stdio: 'inherit', env: { ...process.env, FORCE_COLOR: '1' } }
     );
     ok(`Uploaded: ${r2Key}\n`);
     return true;

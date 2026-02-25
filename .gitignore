@@ -1,0 +1,27 @@
+# ── SECRETS ───────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+.dev.vars          # wrangler local secrets file
+
+# ── DEPENDENCIES ──────────────────────────────────────────────
+node_modules/
+
+# ── BUILD OUTPUT ──────────────────────────────────────────────
+dist/
+.wrangler/
+
+# ── LOGS ──────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+wrangler-*.log
+
+# ── OS ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── EDITOR ────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo

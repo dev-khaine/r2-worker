@@ -8,7 +8,7 @@ binding = "BLOG_CONTENT"
 bucket_name = "capital-blog-content"
 
 [vars]
-ALLOWED_ORIGINS = "https://perkorbit.co,http://localhost:4321,https://capital-blog.marteech.workers.dev"
+ALLOWED_ORIGINS = "https://perkorbit.co,http://localhost:4321,https://astro-blog-71f.pages.dev/"
 # Your R2 public bucket URL — found in R2 dashboard → bucket → Settings → Public Access
 # Format: https://pub-<hash>.r2.dev
 R2_PUBLIC_URL = "https://pub-f29eac88d2ec49038524fc914e01b452.r2.dev"
